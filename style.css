@@ -1,26 +1,33 @@
+:root {
+	--site-width: 50%;
+	--container-padding: 8px;
+	--margin-width: calc((100% - var(--site-width))/2);
+}
 html, body {padding: 0;margin: 0;height: 100%;width:100%;}
 body {font-family: Arial, sans-serif;}
-#main-container {
-	display: inline-block;
-	line-height: 1.2;
-	margin-left: 30%;
-	margin-right: 30%;
-	padding: 8px;
-	width: calc(40% - 16px);
-}
-#page-footer {
-	position: absolute;
-	left: 30%;
-	right: 30%;
-	bottom: 0;
-	padding: 8px;
+#main-container {padding: var(--container-padding);}
+@media (orientation: landscape) {
+	#main-container {
+		display: inline-block;
+		line-height: 1.2;
+		margin-left: var(--margin-width);
+		margin-right: var(--margin-width);
+		width: calc(var(--site-width) - (var(--container-padding)*2));
+	}
+	#page-footer {
+		position: fixed;
+		left: var(--margin-width);
+		right: var(--margin-width);
+		bottom: 0;
+		padding: var(--container-padding);
+	}
 }
 .centered-text {text-align: center;}
 
 @media (prefers-color-scheme: dark) {
 	html {background-color: #181a1b !important;}
-	html, body, input, textarea, select, button {background-color: #181a1b;}
-	html, body, input, textarea, select, button {
+	body, input, textarea, select, button {
+		background-color: #181a1b;
 		border-color: #736b5e;
 		color: #e8e6e3;
 	}
