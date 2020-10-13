@@ -5,21 +5,24 @@
 }
 html, body {padding: 0;margin: 0;height: 100%;width:100%;}
 body {font-family: Arial, sans-serif;}
-#main-container {padding: var(--container-padding);}
+#content {line-height: 1.2;}
+#content, #page-footer {padding: var(--container-padding);}
 @media (orientation: landscape) {
 	#main-container {
-		display: inline-block;
-		line-height: 1.2;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	#content {
+		flex: 1 0 auto;
 		margin-left: var(--margin-width);
 		margin-right: var(--margin-width);
 		width: calc(var(--site-width) - (var(--container-padding)*2));
 	}
 	#page-footer {
-		position: fixed;
-		left: var(--margin-width);
-		right: var(--margin-width);
-		bottom: 0;
-		padding: var(--container-padding);
+		flex-shrink: 0;
+		margin-left: var(--margin-width);
+		margin-right: var(--margin-width);
 	}
 }
 .float-right {float: right;}
