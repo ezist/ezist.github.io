@@ -2,10 +2,11 @@
 	--site-width: 50%;
 	--container-padding: 8px;
 	--margin-width: calc((100% - var(--site-width))/2);
+	--page-line-height: 1.2;
 }
 html, body {padding: 0;margin: 0;height: 100%;width:100%;}
 body {font-family: Arial, sans-serif;}
-#content {line-height: 1.2;}
+#content {line-height: var(--page-line-height);}
 #content, #page-footer {padding: var(--container-padding);}
 @media (orientation: landscape) {
 	#main-container {
