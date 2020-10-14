@@ -1,70 +1,19 @@
-a[href*="wikipedia.org"]::before {
+---
+---
+@mixin favicon($url) {
 	content: "";
 	width: 1em;
 	height: 1em;
 	margin-right: .1em;
-	background-image: url("https://wikipedia.org/favicon.ico");
+	background-image: url($url);
 	background-size: cover;
 	display: inline-block;
-	vertical-align: text-bottom;
+	vertical-align: text-bottom;	
 }
-a[href*="twitter.com"]::before {
-	content: "";
-	width: 1em;
-	height: 1em;
-	margin-right: .1em;
-	background-image: url("https://twitter.com/favicon.ico");
-	background-size: cover;
-	vertical-align: text-bottom;
-	display: inline-block;
-}
-a[href*="twitch.tv"]::before {
-	content: "";
-	width: 1em;
-	height: 1em;
-	margin-right: .1em;
-	background-image: url("https://twitch.tv/favicon.ico");
-	background-size: cover;
-	display: inline-block;
-	vertical-align: text-bottom;
-}
-a[href*="steamcommunity.com"]::before {
-	content: "";
-	width: 1em;
-	height: 1em;
-	margin-right: .1em;
-	background-image: url("https://steamcommunity.com/favicon.ico");
-	background-size: cover;
-	display: inline-block;
-	vertical-align: text-bottom;
-}
-a[href*="mstdn.social"]::before {
-	content: "";
-	width: 1em;
-	height: 1em;
-	margin-right: .1em;
-	background-image: url("https://mstdn.social/favicon.ico");
-	background-size: cover;
-	display: inline-block;
-	vertical-align: text-bottom;
-}
-a[href*="last.fm"]::before {
-	content: "";
-	width: 1em;
-	height: 1em;
-	margin-right: .1em;
-	background-image: url("https://last.fm/favicon.ico");
-	background-size: cover;
-	display: inline-block;
-	vertical-align: text-bottom;
-}
-a[href*="github.com"]::before {
-	content: "";
-	width: 1em;
-	height: 1em;
-	margin-right: .1em;
-	background-image: url("https://github.com/favicon.ico");
-	background-size: cover;
-	display: inline-block;
-	vertical-align: text-bottom;
-}
+a[href*="wikipedia.org"]::before {@include favicon("https://wikipedia.org/favicon.ico");}
+a[href*="twitter.com"]::before {@include favicon("https://twitter.com/favicon.ico");}
+a[href*="twitch.tv"]::before {@include favicon("https://twitch.tv/favicon.ico");}
+a[href*="steamcommunity.com"]::before {@include favicon("https://steamcommunity.com/favicon.ico");}
+a[href*="mstdn.social"]::before {@include favicon("https://mstdn.social/favicon.ico");}
+a[href*="last.fm"]::before {@include favicon("https://last.fm/favicon.ico");}
+a[href*="github.com"]::before {@include favicon("https://github.com/favicon.ico");}
