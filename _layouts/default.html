@@ -11,12 +11,15 @@
 	<body>
 		<div id="main-container">
 			<div id="content">
-				<h1>{{ page.title }}</h1>
-				<p>by {{ page.author }} on {{ page.date }}</p>
+				<div class="clearfix">
+					<img class="float-right" src="{{ page.author.photo }}" width="125" height="125" alt="Avatar for {{ page.author.name }}" />
+					<h1>{{ page.title }}</h1>
+					<p>by <a href="{{ page.author.url }}">{{ page.author.name }}</a> on {{ page.date }}</p>
+				</div>
 				<hr />
 				{{ content }}
 			</div>
-			<div id="page-footer">
+			<div id="page-footer" class="centered-text">
 				<hr />
 				<a href="https://unlicense.org/">unlicensed</a> {{ site.time.year }}
 			</div>
