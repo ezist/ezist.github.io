@@ -1,15 +1,35 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>feeds | ezist.github.io</title>
+		<title>posts | ezist.github.io</title>
 		<link rel="stylesheet" href="/style.css" />
 		<link rel="icon" href="/avatar.png" />
-		<link rel="canonical" href="https://ezist.github.io/" />
+		<link rel="canonical" href="{{ page.url }}" />
 	</head>
 	<body>
-		<div id="main-container">
+		<div id="main-container" class="h-feed">
+			<div id="content">
+				<h1><a href="{{ page.url }}" class="p-name u-url u-uid">Posts</a></h1>
+				<hr />
+				<ul>{% for post in site.posts %}
+					<li class="h-entry">{% assign author = site.data.authors[post.author] %}
+						<a href="{{ post.url }}" class="p-name u-url u-uid">{{ post.title }}</a>{% if author %} by{% if author.url %}
+						<a href="{{ author.url }}" class="p-author h-card">{{ author.name }}</a>{% else %}
+						<span class="p-author">{{ author.name }}</span>{% endif %}{% endif %}{% if post.summary %}
+						- <span class="p-summary">{{ post.summary }}</span>{% endif %}
+						<time class="float-right dt-published" datetime="{{ post.date }}">on {{ post.date | date: "%Y-%m-%d" }}</time>
+					</li>{% endfor %}
+				</ul>
+			</div>
+			<div id="page-footer" class="centered-text">
+				<hr />
+				<a href="https://unlicense.org/">unlicensed</a> {{ 'now' | date: "%Y" }}
+			</div>
 		</div>
 	</body>
 </html>
