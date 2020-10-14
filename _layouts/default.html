@@ -14,14 +14,14 @@
 				<div class="clearfix">
 					<img class="float-right" src="{{ author.photo }}" width="125" height="125" alt="Avatar for {{ author.name }}" />
 					<h1>{{ page.title }}</h1>
-					<p>by <a href="{{ author.url }}">{{ author.name }}</a> on {% page.date | date: "%Y-%m-%d" %}</p>
+					<p>by <a href="{{ author.url }}">{{ author.name }}</a> on {{ page.date | date: "%Y-%m-%d" }}</p>
 				</div>
 				<hr />
 				{{ content }}
 			</div>
 			<div id="page-footer" class="centered-text">
 				<hr />
-				<a href="https://unlicense.org/">unlicensed</a> {% site.time | date: "%Y" %}
+				<a href="https://unlicense.org/">unlicensed</a> {{ 'now' | date: "%Y" }}
 			</div>
 		</div>
 	</body>
