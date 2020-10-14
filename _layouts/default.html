@@ -12,9 +12,9 @@
 		<div id="main-container">
 			<div id="content">
 				<div class="clearfix">
-					<img class="float-right" src="{% page.author.photo %}" width="125" height="125" alt="Avatar for {% page.author.name %}" />
+					<img class="float-right" src="{{ author.photo }}" width="125" height="125" alt="Avatar for {{ author.name }}" />
 					<h1>{{ page.title }}</h1>
-					<p>by <a href="{% page.author.url %}">{% page.author.name %}</a> on {% page.date %}</p>
+					<p>by <a href="{{ author.url }}">{{ author.name }}</a> on {% page.date | date: "%Y-%m-%d" %}</p>
 				</div>
 				<hr />
 				{{ content }}
