@@ -12,9 +12,24 @@
 		<div id="main-container">
 			<div id="content">
 				<div class="clearfix">
-					<img class="float-right" src="{{ author.photo }}" width="125" height="125" alt="Avatar for {{ author.name }}" />
+					{% assign author = site.data.authors[page.author] %}
+					{% if author.photo %}
+						<img class="float-right" src="{{ author.photo }}" width="125" height="125" alt="Avatar for {{ author.name }}" />
+					{% endif %}
 					<h1>{{ page.title }}</h1>
-					<p>by <a href="{{ author.url }}">{{ author.name }}</a> on {{ page.date | date: "%Y-%m-%d" }}</p>
+					<p>
+						{% if author.name %}
+							by
+							{% if author.url %}
+								<a href="{{ author.url }}">
+							{% endif %}
+							{{ author.name }}
+							{% if author.url %}
+								</a>
+							{% endif %}
+						{% endif %}
+						 on {{ page.date | date: "%Y-%m-%d" }}
+					</p>
 				</div>
 				<hr />
 				{{ content }}
