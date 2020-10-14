@@ -13,15 +13,14 @@
 			<div id="content">
 				<div class="clearfix">{% assign author = site.data.authors[page.author] %}
 					<h1 class="p-name">{{ page.title }}</h1>{% if author %}{% if author.url or author.photo %}
-					<div class="p-author">{% if author.photo %}
+					<div class="p-author{% if author.url%} h-card{% endif %}">{% if author.photo %}
 						<img class="float-right u-photo" src="{{ author.photo }}" width="125" height="125" alt="Avatar for {{ author.name }}" />{% endif %}
 						by{% if author.url %}
-						<a class="h-card" href="{{ author.url }}">
-							{{ author.name }}
-						</a>{% endif %}{% else %}
-						<span class="p-author">{{ author.name }}</span>{% endif %}{% endif %}
-						on <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: "%Y-%m-%d" }}</time>
-					</p>
+						<a class="p-name u-url" href="{{ author.url }}">{{ author.name }}</a>{% else %}
+						<span class="p-name">{{ author.name }}</span>{% endif %}
+					</div>{% else %}
+					<span class="p-author p-name">{{ author.name }}</span>{% endif %}{% endif %}
+					on <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: "%Y-%m-%d" }}</time>
 				</div>
 				<hr />
 				<div class="e-content">
