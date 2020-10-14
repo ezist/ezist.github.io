@@ -1,5 +1,6 @@
 ---
 ---
+
 @mixin favicon($url) {
 	content: "";
 	width: 1em;
