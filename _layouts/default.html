@@ -11,16 +11,19 @@
 	<body>
 		<div id="main-container" class="h-entry">
 			<div id="content">
-				<div class="clearfix">{% assign author = site.data.authors[page.author] %}
-					<h1 class="p-name">{{ page.title }}</h1>{% if author %}{% if author.url or author.photo %}
-					<div class="p-author{% if author.url%} h-card{% endif %}">{% if author.photo %}
+				<div id="post-header" class="clearfix">{% assign author = site.data.authors[page.author] %}
+					<div>
+						<h1><a href="{{ page.url }}" class="p-name u-url u-uid">{{ page.title }}</a></h1>
+						on <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: "%Y-%m-%d" }}</time>{{ if page.summary }}
+						<p class="p-summary">{{ page.summary }}</p>{{ endif }}
+					</div>{% if author %}{% if author.url or author.photo %}
+					<div class="float-right align-right p-author{% if author.url%} h-card{% endif %}">{% if author.photo %}
 						<img class="float-right u-photo" src="{{ author.photo }}" width="125" height="125" alt="Avatar for {{ author.name }}" />{% endif %}
 						by{% if author.url %}
 						<a class="p-name u-url" href="{{ author.url }}">{{ author.name }}</a>{% else %}
 						<span class="p-name">{{ author.name }}</span>{% endif %}
 					</div>{% else %}
 					<span class="p-author p-name">{{ author.name }}</span>{% endif %}{% endif %}
-					on <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: "%Y-%m-%d" }}</time>
 				</div>
 				<hr />
 				<div class="e-content">

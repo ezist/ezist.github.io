@@ -9,6 +9,8 @@ html, body {padding: 0;margin: 0;height: 100%;width:100%;}
 body {font-family: Arial, sans-serif;}
 #content {line-height: var(--page-line-height);}
 #content, #page-footer {padding: var(--container-padding);}
+#post-header > div {display: inline-block;}
+#post-header .h-card img {margin-left: .5em;}
 @media (orientation: landscape) {
 	#main-container {
 		display: flex;
@@ -27,6 +29,7 @@ body {font-family: Arial, sans-serif;}
 		margin-right: var(--margin-width);
 	}
 }
+.float-left {float: right;}
 .float-right {float: right;}
 .clearfix {overflow: auto;}
 .centered-text {text-align: center;}
