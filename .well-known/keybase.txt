@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ezist
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ezist.github.io
+  * I am ezist (https://keybase.io/ezist) on keybase.
+  * I have a public key ASAlKCvJJywMJZrgNc9FqiBXppd3AD__xwRpKwdRRoHx1go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012025282bc9272c0c259ae035cf45aa2057a69777003fffc704692b07514681f1d60a",
+      "host": "keybase.io",
+      "kid": "012025282bc9272c0c259ae035cf45aa2057a69777003fffc704692b07514681f1d60a",
+      "uid": "214acc061f3dbf4dc4d2d37ca54b7319",
+      "username": "ezist"
+    },
+    "merkle_root": {
+      "ctime": 1610778553,
+      "hash": "93f27cce9c2b6fdfe85bc1dd6db3cca4a13e4bdbffa9a182cd7b1446296bd830bfbe11ccc43ef8adf72714cf7ad20f4bc9db2755e66609c92a72ff512bd9a31f",
+      "hash_meta": "8888c0f3d92c551a1ef59efcbcb6e31d22a50cfdf48e56d5ec1aaa2e7c1e9fe1",
+      "seqno": 18785031
+    },
+    "service": {
+      "entropy": "lzhiD5gC652mxSY9Ynn4OOMT",
+      "hostname": "ezist.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1610778571,
+  "expire_in": 504576000,
+  "prev": "ebf49520d555d9d04027c26908fd77ead3689a68f8afe9070ffffd4bf992753a",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgJSgryScsDCWa4DXPRaogV6aXdwA//8cEaSsHUUaB8dYKp3BheWxvYWTESpcCEMQg6/SVINVV2dBAJ8JpCP136tNommj4r+kHD//9S/mSdTrEIEH+t0ZPZLaSRee+mpCyw9uLj5ObD4qMghYf3Rd7toBNAgHCo3NpZ8RAdb7WKYlQ3XWnxh48jzrkuK+aIDDGNs2Vk6DpMnPI1RQiAHCRQy8p5x9Kp2ySqyiY4znTDM58cP2EsMDbaMqHD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGA4akxZZEuFQIdLDhQJwoHQlPejq1mqx90ColbNK56no3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ezist
+
+==================================================================
