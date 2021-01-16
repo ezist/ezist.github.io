@@ -18,3 +18,4 @@ a[href*="steamcommunity.com"]::before {@include favicon("https://steamcommunity.
 a[href*="mstdn.social"]::before {@include favicon("https://mstdn.social/favicon.ico");}
 a[href*="last.fm"]::before {@include favicon("https://last.fm/favicon.ico");}
 a[href*="github.com"]::before {@include favicon("https://github.com/favicon.ico");}
+a[href*="keybase.io"]::before {@include favicon("https://keybase.io/favicon.ico");}
