@@ -19,3 +19,4 @@ a[href*="mstdn.social"]::before {@include favicon("https://mstdn.social/favicon.
 a[href*="last.fm"]::before {@include favicon("https://last.fm/favicon.ico");}
 a[href*="github.com"]::before {@include favicon("https://github.com/favicon.ico");}
 a[href*="keybase.io"]::before {@include favicon("https://keybase.io/favicon.ico");}
+a.pleroma::before {@include favicon("https://pleroma.social/images/pleroma_logo_vector_bg_32-0291df67.png");}
