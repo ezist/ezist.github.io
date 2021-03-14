@@ -10,6 +10,7 @@ body {font-family: Arial, sans-serif;}
 ul {padding-left: 1em;}
 #content {line-height: var(--page-line-height);}
 #content, #page-footer {padding: var(--container-padding);}
+#content img {max-width: 100%;}
 @media (orientation: portrait) {
   #nav {
     border-bottom: 1px solid #808080;
