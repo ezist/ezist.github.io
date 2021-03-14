@@ -10,8 +10,21 @@ body {font-family: Arial, sans-serif;}
 ul {padding-left: 1em;}
 #content {line-height: var(--page-line-height);}
 #content, #page-footer {padding: var(--container-padding);}
+@media (orientation: portrait) {
+  #nav {
+    border-bottom: 1px solid #808080;
+  }
+}
 @media (orientation: landscape) {
   ul {padding-left: 2em;}
+  #nav ul {
+    border-right: 1px solid #808080;
+    height: 100%;
+    padding: 16px 0 0 2em;
+    position: fixed;
+    margin: 0;
+    width: calc(var(--margin-width) - 2em - 8px);
+  }
 	#main-container {
 		display: flex;
 		flex-direction: column;

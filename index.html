@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>may's website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="avatar.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/avatar.png" />
     <link rel="canonical" href="https://ezist.github.io/" />
     <link rel="profile" href="http://microformats.org/profile/hcard"> <!-- Using hCard -->
   </head>
   <body>
     <div id="main-container" class="h-card">
+      {% include nav.html %}
       <div id="content">
-        <div class="clearfix">
+        <header class="clearfix">
           <img class="u-photo float-right" src="avatar.png" width="125" height="125" alt="Avatar for ezist" />
           <h1 class="p-name"><span class="p-given-name">may</span> (<a href="https://ezist.github.io/" class="p-nickname u-uid">ezist</a>)</h1>
           <p class="p-note">This webzone is currently being worked on.</p>
-        </div>
+        </header>
         <hr />
         <p>In the meantime, why don't you check out my (horrendous) content on various sites:</p>
         <ul>
@@ -40,11 +41,7 @@
           <li>Freeplay &lt;<a href="https://freeplay.codeberg.page/" target="_blank">freeplay.codeberg.page</a>&gt;</li>
         </ul>
       </div>
-      <div id="page-footer" class="centered-text">
-        <hr />
-        <a href="https://unlicense.org/">unlicensed</a> 2021 &bull;
-        made with emacs
-      </div>
+      {% include footer.html %}
     </div>
   </body>
 </html>
