@@ -2,6 +2,7 @@
 title: jaffa
 description: yum
 layout: default
+permalink: /jaffa.html
 ---
 
 ![A Jaffa cake.](https://upload.wikimedia.org/wikipedia/commons/9/9f/Jaffa_cake.png)

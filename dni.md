@@ -2,6 +2,7 @@
 title: dni
 description: uh oh
 layout: default
+permalink: /dni.html
 ---
 
 So I know a lot of the people who might be categorized here will just ignore this,

@@ -3,6 +3,7 @@ title: home
 description: This webzone is currently being worked on.
 headerimg: /avatar.png
 layout: default
+permalink: /
 ---
 
 In the meantime, why don't you check out my (horrendous) content on various sites:
