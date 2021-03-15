@@ -1,5 +1,8 @@
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="/style.css" />
-<link rel="icon" href="/avatar.png" />
-<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% unless page.url == "/" %}{{ page.title }} - {% endunless %}may's website</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="/avatar.png" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+</head>

@@ -1,6 +1,7 @@
 <div id="nav">
   <ul>
-    <li><a href="/">home</a></li>
-    <li><a href="/dni.html">dni</a></li>
+    {% for page in site.html_pages %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
   </ul>
 </div>
