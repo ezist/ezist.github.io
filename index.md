@@ -18,7 +18,7 @@ In the meantime, why don't you check out my (horrendous) content on various site
 
 **Miscellaneous info about me:**
 - PGP fingerprint: [DE5204FC887AB32F](key.asc) (click to download)
-- Timezone: UTC-06:00 (CST)
+- Timezone: UTC-05:00 (CDT)
 - Pronouns: [she](https://pronoun.is/she)/[it](https://pronoun.is/it)
 
 **Friends and/or cool people:**
