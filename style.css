@@ -20,10 +20,13 @@ ul {padding-left: 1em;}
   ul {padding-left: 2em;}
   #nav ul {
     border-right: 1px solid #808080;
+    font-family: monospace;
+    font-size: 12pt;
     height: 100%;
     padding: 16px 0 0 2em;
     position: fixed;
     margin: 0;
+    text-transform: uppercase;
     width: calc(var(--margin-width) - 2em - 8px);
   }
 	#main-container {
