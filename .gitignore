@@ -2,8 +2,8 @@
 *~
 
 # Jekyll stuff
-.jekyll-cache
-_site
+.jekyll-cache/
+_site/
 
 # ruby
-Gemfile.lock
+/Gemfile.lock

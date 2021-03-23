@@ -3,6 +3,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-loading-lazy
   - jekyll-extlinks
+  - jekyll-feed
 repository: ezist/ezist.github.io
 keep_files:
   - .git
@@ -12,3 +13,7 @@ keep_files:
   - style.css
 extlinks:
   attributes: {rel: nofollow, target: _blank}
+feed:
+  title: may's website
+  description: uuggghhhhhhhh
+  author: ezist

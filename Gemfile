@@ -6,4 +6,5 @@ group :jekyll_plugins do
   gem 'jekyll-github-metadata'
   gem 'jekyll-loading-lazy'
   gem 'jekyll-extlinks'
+  gem 'jekyll-feed'
 end
