@@ -25,7 +25,6 @@ ul {padding-left: 1em;}
     height: 100%;
     position: fixed;
     margin: 0;
-    text-transform: uppercase;
     width: calc(var(--margin-width) - 1em);
   }
   #nav ul {
