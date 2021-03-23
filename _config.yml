@@ -3,3 +3,9 @@ plugins:
   - jekyll-github-metadata
   - jekyll-loading-lazy
 repository: ezist/ezist.github.io
+keep_files:
+  - .git
+  - avatar.png
+  - key.asc
+  - keybase.txt
+  - style.css
