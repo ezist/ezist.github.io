@@ -1,1 +1,4 @@
 markdown: kramdown
+plugins:
+  - jekyll-github-metadata
+  - jekyll-loading-lazy

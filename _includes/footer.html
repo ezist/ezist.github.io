@@ -1,5 +1,8 @@
 <div id="page-footer" class="centered-text">
   <hr />
   <a href="https://unlicense.org/">unlicensed</a> 2021 &bull;
-  made with emacs
+  made with emacs &bull;
+  commit <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">
+    {{ site.github.build_revision | slice: -6, 6 }}
+  </a>
 </div>
