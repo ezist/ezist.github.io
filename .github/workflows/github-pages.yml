@@ -22,5 +22,6 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           target_branch: gh-pages
+          keep_history: true
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
