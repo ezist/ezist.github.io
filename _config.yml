@@ -2,6 +2,7 @@ markdown: kramdown
 plugins:
   - jekyll-github-metadata
   - jekyll-loading-lazy
+  - jekyll-extlinks
 repository: ezist/ezist.github.io
 keep_files:
   - .git
@@ -9,3 +10,5 @@ keep_files:
   - key.asc
   - keybase.txt
   - style.css
+extlinks:
+  attributes: {rel: nofollow, target: _blank}

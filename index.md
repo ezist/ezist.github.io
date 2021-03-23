@@ -22,5 +22,5 @@ In the meantime, why don't you check out my (horrendous) content on various site
 - Pronouns: [she](https://pronoun.is/she)/[it](https://pronoun.is/it)
 
 **Friends and/or cool people:**
-- miro252 &lt;[miro252.neocities.org](https://miro252.neocities.org/){:target="_blank"}&gt;
-- Freeplay &lt;[freeplay.codeberg.page](https://freeplay.codeberg.page/){:target="_blank"}&gt;
+- miro252 &lt;[miro252.neocities.org](https://miro252.neocities.org/)&gt;
+- Freeplay &lt;[freeplay.codeberg.page](https://freeplay.codeberg.page/)&gt;

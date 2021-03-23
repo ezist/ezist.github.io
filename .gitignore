@@ -4,3 +4,6 @@
 # Jekyll stuff
 .jekyll-cache
 _site
+
+# ruby
+Gemfile.lock
