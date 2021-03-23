@@ -3,18 +3,18 @@
     <b>PAGES</b>
     <li><a href="/">HOME</a></li>
     <li><a href="/archive">ARCHIVE</a></li>
-    {% for page in site.html_pages %}
-      {% if page.url == "/archive.html" or page.url == "/" %}
-        {% continue %}
-      {% else %}
+    {%- for page in site.html_pages -%}
+      {%- if page.url == "/archive.html" or page.url == "/" -%}
+        {%- continue -%}
+      {%- else -%}
         <li><a href="{{ page.url }}">{{ page.title | upcase }}</a></li>
-      {% endif %}
-    {% endfor %}
+      {%- endif -%}
+    {%- endfor -%}
   </ul>
   <ul>
     <b>POSTS</b>
-    {% for post in site.posts limit:10 %}
+    {%- for post in site.posts limit:10 -%}
       <li><a href="{{ post.url }}">{{ post.title | upcase }}</a></li>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
 </div>
