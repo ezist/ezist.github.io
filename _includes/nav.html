@@ -1,20 +1,20 @@
 <div id="nav">
   <ul>
-    <b>PAGES</b>
-    <li><a href="/">HOME</a></li>
-    <li><a href="/archive">ARCHIVE</a></li>
+    <b>pages</b>
+    <li><a href="/">home</a></li>
+    <li><a href="/archive">archive</a></li>
     {%- for page in site.html_pages -%}
       {%- if page.url == "/archive.html" or page.url == "/" -%}
         {%- continue -%}
       {%- else -%}
-        <li><a href="{{ page.url }}">{{ page.title | upcase }}</a></li>
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
       {%- endif -%}
     {%- endfor -%}
   </ul>
   <ul>
-    <b>POSTS</b>
+    <b>posts</b>
     {%- for post in site.posts limit:10 -%}
-      <li><a href="{{ post.url }}">{{ post.title | upcase }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title  }}</a></li>
     {%- endfor -%}
   </ul>
 </div>

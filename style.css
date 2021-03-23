@@ -11,6 +11,10 @@ ul {padding-left: 1em;}
 #content {line-height: var(--page-line-height);}
 #content, #page-footer {padding: var(--container-padding);}
 #content img {max-width: 100%;}
+#nav {
+  font-family: monospace;
+  text-transform: uppercase;
+}
 @media (orientation: portrait) {
   #nav {
     border-bottom: 1px solid #808080;
@@ -20,7 +24,6 @@ ul {padding-left: 1em;}
   ul {padding-left: 2em;}
   #nav {
     border-right: 1px solid #808080;
-    font-family: monospace;
     font-size: 12pt;
     height: 100%;
     position: fixed;
