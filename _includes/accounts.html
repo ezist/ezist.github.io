@@ -1,0 +1,17 @@
+<div id="accounts">
+{%- assign accounts = site.data.accounts | sort_natural: "name" -%}
+{%- for account in accounts -%}
+  <a href="{{ account.url }}">
+    {%- assign site1 = account.url | split: "//" -%}
+    {%- assign site2 = site1[1] | split: "/" -%}
+    <img src="
+      {%- if account.name == "Pleroma" -%}
+        https://pleroma.social/images/pleroma_logo_vector_bg_32-0291df67.png
+      {%- else -%}
+        {{ site1[0] }}//{{ site2[0] }}/favicon.ico
+      {%- endif -%}
+    " width="32" height="32" alt="{{ account.name }}" />
+    {{ account.name }}
+  </a>
+{%- endfor -%}
+</div>
