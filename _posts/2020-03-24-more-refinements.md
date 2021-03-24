@@ -8,7 +8,7 @@ So I've made some improvements since the last post, like:
 
 * Atom feed
 * GitHub banner
-* Added [jemoji](https://github.com/jekyll/jemoji) :+1:
+* ~~Added [jemoji](https://github.com/jekyll/jemoji) :+1:~~ Update: replaced with [my own Jekyll plugin, using Twemoji!](https://github.com/ezist/ezist.github.io/blob/master/_plugins/twemoji.rb)
 * Replaced the list of accounts with a fancy \~flexbox\~
 * Added a 404 page
 

@@ -7,7 +7,6 @@ plugins:
   - jekyll-loading-lazy
   - jekyll-extlinks
   - jekyll-feed
-  - jemoji
 repository: ezist/ezist.github.io
 keep_files:
   - .git
