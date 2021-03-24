@@ -22,6 +22,9 @@ ul {padding-left: 1em;}
   margin: 0 auto;
   display: block;
 }
+.emoji {
+  vertical-align: middle;
+}
 #nav {
   font-family: monospace;
   text-transform: uppercase;
