@@ -4,7 +4,7 @@
     <li><a href="/">home</a></li>
     <li><a href="/archive">archive</a></li>
     {%- for page in site.html_pages -%}
-      {%- if page.url == "/archive.html" or page.url == "/" -%}
+      {%- if page.url == "/archive.html" or page.url == "/" or page.url == "/404.html" -%}
         {%- continue -%}
       {%- else -%}
         <li><a href="{{ page.url }}">{{ page.title }}</a></li>

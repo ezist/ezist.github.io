@@ -14,6 +14,7 @@
         </header>
         <hr />
         {{- content | extlinks -}}
+        {%- unless page.url == "/404.html" -%}
         <div id="share" class="right-text">
           <noscript>Thank you for not using JavaScript. :clap:<br /></noscript>
           <div class="shareon" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}">
@@ -21,6 +22,7 @@
             <button class="reddit"></button>
           </div>
         </div>
+        {%- endunless -%}
       </div>
       {%- include footer.html -%}
     </div>
