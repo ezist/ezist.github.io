@@ -9,4 +9,5 @@ group :jekyll_plugins do
   gem 'jekyll-loading-lazy'
   gem 'jekyll-extlinks'
   gem 'jekyll-feed'
+  gem 'jemoji'
 end
