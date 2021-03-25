@@ -17,6 +17,8 @@ ul {padding-left: 1em;}
 }
 #accounts a {
   margin: 0 24px 16px;
+  width: 72px;
+  text-align: center;
 }
 #accounts img {
   margin: 0 auto;
