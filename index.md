@@ -6,13 +6,15 @@ layout: default
 permalink: /
 ---
 
+{%- capture dst -%}{{ dst }}{%- endcapture -%}
+
 In the meantime, why don't you check out my (horrendous) content on various sites:
 
 {% include accounts.html %}
 
 **Miscellaneous info about me:**
 - PGP fingerprint: [DE5204FC887AB32F](key.asc) (click to download)
-- Timezone: UTC-05:00 (CDT)
+- Timezone: UTC-{% if dst %}05:00 (CDT){% else %}06:00 (CST){% endif %}
 - Pronouns: [she](https://pronoun.is/she)/[it](https://pronoun.is/it)
 
 **Friends and/or cool people:**
