@@ -6,7 +6,7 @@ layout: default
 
 So I've made some improvements since the last post, like:
 
-* Atom feed
+* ~~Atom feed~~ Broken, will have to look into.
 * GitHub banner
 * ~~Added [jemoji](https://github.com/jekyll/jemoji) :+1:~~ Update: replaced with [my own Jekyll plugin, using Twemoji!](https://github.com/ezist/ezist.github.io/blob/master/_plugins/twemoji.rb)
 * Replaced the list of accounts with a fancy \~flexbox\~
