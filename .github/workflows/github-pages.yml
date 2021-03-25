@@ -23,5 +23,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           target_branch: gh-pages
           keep_history: true
+          pre_publish_commands: |
+            echo 'Hello world!'
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
