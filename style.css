@@ -74,6 +74,10 @@ img.emoji {
 .clearfix {overflow: auto;}
 .centered-text {text-align: center;}
 .right-text {text-align: right;}
+.github-corner svg {
+  fill: #151513;
+  color: #fff;
+}
 
 @media (prefers-color-scheme: dark) {
 	html {background-color: #181a1b !important;}
@@ -83,4 +87,8 @@ img.emoji {
 		color: #e8e6e3;
 	}
 	a {color: #3391ff;}
+  .github-corner svg {
+    fill: #fff;
+    color: #151513;
+  }
 }
