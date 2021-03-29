@@ -78,6 +78,17 @@ img.emoji {
   fill: #151513;
   color: #fff;
 }
+.shareon > .atom {
+  background-color: #fa9c39;
+}
+.shareon > .atom::before {
+  background-image: url('/feed-icon.svg');
+  background-size: 30px 30px;
+  height: 30px;
+  left: 3px;
+  top: 3px;
+  width: 30px;
+}
 figure {
   border: 1px solid #888;
   margin: 1em 20px;
