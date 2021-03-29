@@ -13,5 +13,7 @@ keep_files:
   - avatar.png
   - key.asc
   - keybase.txt
+feed:
+  excerpt_only: true
 extlinks:
   attributes: {rel: nofollow, target: _blank}

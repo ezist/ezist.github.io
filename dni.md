@@ -1,6 +1,6 @@
 ---
 title: dni
-description: uh oh
+excerpt: uh oh
 layout: default
 permalink: /dni.html
 ---

@@ -1,6 +1,6 @@
 ---
 title: first actual post
-description: ugh jekyll is a nightmare
+excerpt: ugh jekyll is a nightmare
 layout: default
 ---
 

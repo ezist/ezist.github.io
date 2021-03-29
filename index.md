@@ -1,6 +1,6 @@
 ---
 title: home
-description: This webzone is currently being worked on.
+excerpt: This webzone is currently being worked on.
 headerimg: /avatar.png
 layout: default
 permalink: /
