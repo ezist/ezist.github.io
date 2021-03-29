@@ -78,6 +78,23 @@ img.emoji {
   fill: #151513;
   color: #fff;
 }
+figure {
+  border: 1px solid #888;
+  margin: 1em 20px;
+  max-width: 230px;
+  padding: 4px;
+}
+figure.noborder {
+  border: none;
+}
+figure.maxwidth {
+  max-width: none;
+}
+figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
 
 @media (prefers-color-scheme: dark) {
 	html {background-color: #181a1b !important;}
