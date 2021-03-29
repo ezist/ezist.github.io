@@ -1,7 +1,7 @@
 ---
 title: more refinements
 excerpt: flex! and other minor stuff
-layout: default
+layout: new
 ---
 
 So I've made some improvements since the last post, like:

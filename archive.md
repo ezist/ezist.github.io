@@ -1,8 +1,8 @@
 ---
 title: archive
 excerpt: every post
-layout: default
-permalink: /archive.html
+layout: new
+permalink: /archive
 ---
 
 {%- for post in site.posts -%}

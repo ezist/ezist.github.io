@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% unless page.url == "/" %}{{ page.title }} - {% endunless %}{{ site.title }}</title>
+    {%- feed_meta -%}
+    <link rel="stylesheet" href="/style.new.css" />
+    <link href="https://cdn.jsdelivr.net/npm/shareon@1/dist/shareon.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/shareon@1/dist/shareon.min.js" type="text/javascript"></script>
+    <link rel="icon" href="/avatar.png" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="/">home</a> &bull;
+        <a href="/archive">archive</a>
+      </nav>
+      <article>
+        {%- unless page.noheader -%}
+        <header>
+          <h1>{{ page.title }}</h1>
+          <small>{{ page.excerpt }}</small>
+        </header>
+        {%- endunless -%}
+        {{- content | extlinks -}}
+      </article>
+      <footer>
+        <a rel="license" href="https://unlicense.org/">unlicensed</a> 2021 &bull;
+        <a href="/feed.xml">atom feed</a> &bull;
+        commit <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">
+          {{- site.github.build_revision | slice: 0, 7 -}}
+        </a> &bull;
+        <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">source file</a>
+      </footer>
+    </main>
+  </body>
+</html>

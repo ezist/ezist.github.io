@@ -1,7 +1,7 @@
 ---
 title: first actual post
 excerpt: ugh jekyll is a nightmare
-layout: default
+layout: new
 ---
 
 ugh I hated setting up the last part of this but now it'll be so easy

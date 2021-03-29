@@ -1,0 +1,65 @@
+---
+title: home
+excerpt: This webzone is currently being worked on.
+layout: new
+noheader: true
+---
+
+{%- capture dst -%}{{ dst }}{%- endcapture -%}
+
+<table height="100%">
+  <tr>
+    <td width="30%">
+      <section>
+        <h1>posts</h1>
+        <ul>
+          {%- for post in site.posts limit:10 -%}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {%- endfor -%}
+            <li class="no-marker"><a href="/archive">See more...</a></li>
+        </ul>
+      </section>
+      <section>
+        <h1>pages</h1>
+        <ul>
+          {%- for page in site.html_pages -%}
+          {%- if page.url == "/archive" or page.url == "/" or page.url == "/404" -%}
+            {%- continue -%}
+          {%- else -%}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {%- endif -%}
+          {%- endfor -%}
+        </uL>
+      </section>
+    </td>
+    <td>
+      <section>
+        <header>
+          <img src="/avatar.png" class="float-right" height="75" />
+          <h1>about me</h1>
+          <small>{{ page.excerpt }}</small>
+        </header>
+        <p>Hi! My name is May and I do things.</p>
+        {% include accounts.html %}
+        <p>
+          Here are some cool people:
+          <ul>
+            {%- for person in site.data.coolpeople -%}
+            {%- assign site1 = person.url | split: "//" -%}
+            {%- assign site2 = site1[1] | split: "/" -%}
+            <li>{{ person.name }} &lt;<a href="{{ person.url }}">{{ site2[0] }}</a>&gt;</li>
+            {%- endfor -%}
+          </ul>
+        </p>
+        <p>
+          Here's some miscellaneous bullet points:
+          <ul class="nomarker">
+            <li>PGP fingerprint: <a href="/key.asc">DE5204FC887AB32F</a> (click to download)</li>
+            <li>Timezone: UTC-{% if dst %}05:00 (CDT){% else %}06:00 (CST){% endif %}</li>
+            <li>Pronouns: <a href="https://pronoun.is/she">she</a>/<a href="https://pronoun.is/it">it</a></li>
+          </ul>
+        </p>
+      </section>
+    </td>
+  </tr>
+</table>
