@@ -1,5 +1,7 @@
 :root {
+  --article-background-colour: #eee;
   --border-colour: #000;
+  --backdrop-colour: #ccc;
 }
 html, body {
   height: 100%;
@@ -7,6 +9,7 @@ html, body {
   margin: 0;
   width: 100%;
 }
+html, body, input, textarea, select, button {background-color: var(--backdrop-colour) !important;}
 body {
   line-height: 1.2;
   font-family: Arial, sans-serif;
@@ -75,6 +78,7 @@ main > * {
   padding: 8px;
 }
 article {
+  background-color: var(--article-background-colour);
   border-top: 1px solid var(--border-colour);
   border-bottom: 1px solid var(--border-colour);
   flex: 1 1 auto;
@@ -119,11 +123,11 @@ nav, footer {font-size: small;}
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --article-background-colour: #222;
     --border-colour: #888;
+    --backdrop-colour: #111;
   }
-	html {background-color: #111 !important;}
 	body, input, textarea, select, button {
-		background-color: #111;
 		border-color: #736b5e;
 		color: #e8e6e3;
 	}
