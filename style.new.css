@@ -1,3 +1,6 @@
+:root {
+  --border-colour: #000;
+}
 html, body {
   height: 100%;
   padding: 0;
@@ -38,7 +41,7 @@ table {
   width: 100%;
 }
 table td {
-  border-left: 1px solid #888;
+  border-left: 1px solid var(--border-colour);
   padding: 8px;
   vertical-align: baseline;
 }
@@ -47,7 +50,7 @@ table td:first-child {border-left: none;}
 .float-left {float: left;}
 .float-right {float: right;}
 figure {
-  border: 1px solid #888;
+  border: 1px solid var(--border-colour);
   margin: 1em 20px;
   max-width: 230px;
   padding: 4px;
@@ -72,16 +75,17 @@ main > * {
   padding: 8px;
 }
 article {
+  border-top: 1px solid var(--border-colour);
+  border-bottom: 1px solid var(--border-colour);
   flex: 1 0 auto;
 }
 article img {
   max-width: 100%;
 }
-nav, header {
-  border-bottom: 1px solid #888;
+header {
+  border-bottom: 1px solid var(--border-colour);
 }
 footer {
-  border-top: 1px solid #888;
   flex-shrink: 0;
   text-align: right;
 }
@@ -94,14 +98,14 @@ nav, footer {font-size: small;}
     width: unset;
   }
   #home-table td:first-child {
-    border-bottom: 3px solid #888;
+    border-bottom: 3px solid var(--border-colour);
   }
 }
 
 @media (orientation: landscape) and (min-width: 1280px) {
   article {
-    border-left: 1px solid #888;
-    border-right: 1px solid #888;
+    border-left: 1px solid var(--border-colour);
+    border-right: 1px solid var(--border-colour);
   }
   main {
     margin: 0 auto;
@@ -110,9 +114,12 @@ nav, footer {font-size: small;}
 }
 
 @media (prefers-color-scheme: dark) {
-	html {background-color: #181a1b !important;}
+  :root {
+    --border-colour: #888;
+  }
+	html {background-color: #111 !important;}
 	body, input, textarea, select, button {
-		background-color: #181a1b;
+		background-color: #111;
 		border-color: #736b5e;
 		color: #e8e6e3;
 	}
