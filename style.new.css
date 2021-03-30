@@ -101,6 +101,8 @@ footer {
   article {
     border-left: 1px solid #888;
     border-right: 1px solid #888;
+  }
+  main {
     margin: 0 auto;
     width: 60%;
   }
