@@ -83,8 +83,9 @@ nav, header {
 footer {
   border-top: 1px solid #888;
   flex-shrink: 0;
-  text-align: center;
+  text-align: right;
 }
+nav, footer {font-size: small;}
 
 @media (orientation: portrait) {
   #home-table td {
