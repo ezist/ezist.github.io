@@ -43,7 +43,7 @@ table td {
   vertical-align: baseline;
 }
 table td:first-child {border-left: none;}
-li.no-marker {list-style: none;}
+.no-marker {list-style: none;}
 .float-left {float: left;}
 .float-right {float: right;}
 figure {
