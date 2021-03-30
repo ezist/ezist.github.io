@@ -97,6 +97,15 @@ footer {
   }
 }
 
+@media (orientation: landscape) and (min-width: 1280px) {
+  article {
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
 	html {background-color: #181a1b !important;}
 	body, input, textarea, select, button {
