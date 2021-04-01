@@ -115,8 +115,13 @@ nav, footer {font-size: small;}
     border-left: 1px solid var(--border-colour);
     border-right: 1px solid var(--border-colour);
   }
+  body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
   main {
-    margin: 0 auto;
+    height: 80%;
     width: 60%;
   }
 }
