@@ -24,3 +24,6 @@
 
 - name: Bandcamp
   url: https://bandcamp.com/ezist
+
+- name: Lemmy
+  url: https://lemmy.ml/u/ezist
