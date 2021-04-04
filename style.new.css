@@ -56,7 +56,7 @@ nav, footer { font-size: small; }
 
 @media (orientation: portrait) { #home-table div:first-child { border-bottom: 3px solid var(--border-colour); } #home-table div:last-child { padding-left: none; padding-top: 8px; } }
 
-@media (orientation: landscape) { #home-table { display: flex; height: 100%; } #home-table > div:first-child { flex: 3; } #home-table > div:last-child { border-left: 1px solid var(--border-colour); flex: 7; padding-left: 8px; } }
+@media (orientation: landscape) { #home-table { display: flex; height: 100%; } #home-table > div:first-child { flex: 3; } #home-table > div.spacer { border-left: 1px solid var(--border-colour); flex: 0; margin: 0 8px; } #home-table > div:last-child { flex: 7; } }
 
 @media (orientation: landscape) and (min-width: 1280px) { article { border-left: 1px solid var(--border-colour); border-right: 1px solid var(--border-colour); } body { align-items: center; display: flex; justify-content: center; } main { height: 80%; width: 60%; } }
 
