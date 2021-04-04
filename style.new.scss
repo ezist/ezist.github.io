@@ -130,10 +130,13 @@ nav, footer {font-size: small;}
   #home-table > div:first-child {
     flex: 3;
   }
-  #home-table > div:last-child {
+  #home-table > div.spacer {
     border-left: 1px solid var(--border-colour);
+    flex: 0;
+    margin: 0 8px;
+  }
+  #home-table > div:last-child {
     flex: 7;
-    padding-left: 8px;
   }
 }
 
