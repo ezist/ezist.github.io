@@ -1,7 +1,11 @@
+---
+---
+
 :root {
   --article-background-colour: #eee;
   --border-colour: #000;
   --backdrop-colour: #ccc;
+  --even-table-row-colour: #ccc;
 }
 html, body {
   height: 100%;
@@ -38,17 +42,25 @@ img.emoji {
   vertical-align: -0.1em;
 }
 table {
-  border: none;
+  border: 1px solid var(--border-colour);
   border-collapse: collapse;
+  margin: 0 auto;
   table-layout: fixed;
-  width: 100%;
+  max-width: 100%;
 }
-table td {
+th {
+  background-color: var(--border-colour);
+  color: #fff;
+}
+th, td {
   border-left: 1px solid var(--border-colour);
+  border-top: 1px solid var(--border-colour);
   padding: 8px;
   vertical-align: baseline;
 }
-table td:first-child {border-left: none;}
+tbody > tr:nth-child(even) {
+  background-color: var(--even-table-row-colour);
+}
 .no-marker {list-style: none;}
 .float-left {float: left;}
 .float-right {float: right;}
@@ -88,6 +100,7 @@ article img {
   max-width: 100%;
 }
 p {
+  clear: left;
   overflow-wrap: break-word;
 }
 header {
@@ -100,13 +113,27 @@ footer {
 nav, footer {font-size: small;}
 
 @media (orientation: portrait) {
-  #home-table td {
-    border-left: none;
-    display: block;
-    width: unset;
-  }
-  #home-table td:first-child {
+  #home-table div:first-child {
     border-bottom: 3px solid var(--border-colour);
+  }
+  #home-table div:last-child {
+    padding-left: none;
+    padding-top: 8px;
+  }
+}
+
+@media (orientation: landscape) {
+  #home-table {
+    display: flex;
+    height: 100%;
+  }
+  #home-table > div:first-child {
+    flex: 3;
+  }
+  #home-table > div:last-child {
+    border-left: 1px solid var(--border-colour);
+    flex: 7;
+    padding-left: 8px;
   }
 }
 
@@ -131,6 +158,7 @@ nav, footer {font-size: small;}
     --article-background-colour: #222;
     --border-colour: #888;
     --backdrop-colour: #111;
+    --even-table-row-colour: #111;
   }
 	body, input, textarea, select, button {
 		border-color: #736b5e;
