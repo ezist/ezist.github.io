@@ -2,7 +2,7 @@
 title: archive
 excerpt: every post
 layout: new
-permalink: /archive
+nolist: true
 ---
 
 {%- for post in site.posts -%}

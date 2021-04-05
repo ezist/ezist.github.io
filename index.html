@@ -3,6 +3,7 @@ title: home
 excerpt: This webzone is currently being worked on.
 layout: new
 noheader: true
+nolist: true
 ---
 
 {%- capture dst -%}{{ dst }}{%- endcapture -%}
@@ -22,7 +23,7 @@ noheader: true
       <h1>pages</h1>
       <ul>
         {%- for page in site.html_pages -%}
-        {%- if page.url == "/archive" or page.url == "/" or page.url == "/404" -%}
+        {%- if page.nolist -%}
           {%- continue -%}
         {%- else -%}
         <li><a href="{{ page.url }}">{{ page.title }}</a></li>

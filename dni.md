@@ -2,7 +2,6 @@
 title: dni
 excerpt: uh oh
 layout: new
-permalink: /dni
 ---
 
 So I know a lot of the people who might be categorized here will just ignore this,
