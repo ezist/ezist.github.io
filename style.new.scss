@@ -80,6 +80,31 @@ figcaption {
   font-size: 12px;
   text-align: center;
 }
+blockquote {
+  border-left: 6px solid var(--border-colour);
+  float: left;
+  margin: 1em 2em 1em 1em;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-left: 1em;
+}
+cite {
+  display: block;
+}
+p.center {
+  text-align: center;
+}
+div.center {
+  margin: 0 auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  &, & > * {
+    clear: both;
+    float: none;
+  }
+}
 
 main {
   display: flex;
@@ -100,7 +125,6 @@ article img {
   max-width: 100%;
 }
 p {
-  clear: left;
   overflow-wrap: break-word;
 }
 header {
