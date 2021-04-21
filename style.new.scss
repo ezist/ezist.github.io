@@ -127,6 +127,18 @@ article img {
 p {
   overflow-wrap: break-word;
 }
+p.no-margin {
+  margin: 0;
+}
+p.no-bottom-margin {
+  margin-bottom: 0;
+}
+p.indent-paragraph { 
+  text-indent: 2.5em;
+}
+p.justify-text {
+  text-align: justify;
+}
 header {
   border-bottom: 1px solid var(--border-colour);
 }
