@@ -70,7 +70,11 @@ header { border-bottom: 1px solid var(--border-colour); }
 
 footer { flex-shrink: 0; text-align: right; }
 
-nav, footer { font-size: small; }
+nav, footer { color: #eee; font-size: small; }
+
+nav a, footer a { color: #3391ff; }
+
+nav a:visited, footer a:visited { color: #ee48ee; }
 
 @media (orientation: portrait) { #home-table div:first-child { border-bottom: 3px solid var(--border-colour); } #home-table div:last-child { padding-left: none; padding-top: 8px; } }
 
