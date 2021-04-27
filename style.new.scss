@@ -147,7 +147,12 @@ footer {
   flex-shrink: 0;
   text-align: right;
 }
-nav, footer {font-size: small;}
+nav, footer {
+  color: #eee;
+  font-size: small;
+ 	a {color: #3391ff;}
+  a:visited {color: #ee48ee;}
+}
 
 @media (orientation: portrait) {
   #home-table div:first-child {
