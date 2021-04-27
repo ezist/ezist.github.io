@@ -15,6 +15,7 @@ html, body {
 }
 html, body, input, textarea, select, button {background-color: var(--backdrop-colour) !important;}
 body {
+  background-image: url(/space.gif);
   line-height: 1.2;
   font-family: Arial, sans-serif;
   font-size: 16px;
